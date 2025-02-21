@@ -7,9 +7,6 @@ import (
 
 func TestGetAPIKey(t *testing.T) {
 
-	// test CI failure
-	t.Fatalf("Test failed successfully")
-
 	req, err := http.NewRequest("GET", "http://1.1.1.1/", nil)
 	if err != nil {
 		t.Fatalf("Error creating the request")
