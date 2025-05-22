@@ -7,6 +7,7 @@ import (
 
 func TestGetAPIKey(t *testing.T) {
 
+	t.Fatalf("Breaking the code for fun")
 	req, err := http.NewRequest("GET", "http://1.1.1.1/", nil)
 	if err != nil {
 		t.Fatalf("Error creating the request")
